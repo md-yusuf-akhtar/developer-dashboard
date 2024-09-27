@@ -49,7 +49,7 @@ export const Repositories = () => {
               <div className="repo-title">{formatRepoName(repo.name)}</div>
               <div className="repo-description">{repo.description || "No description provided."}</div>
               <div className="repo-tags">
-                <span className="tag">#{repo.language ? repo.language : 'others'}</span>
+                {!repo.topics.length && <span className="tag">#{repo.language ? repo.language : 'others'}</span>}
                 {repo.topics && repo.topics.map(topic => (
                   <span className="tag" key={topic}>#{topic}</span>
                 ))}
