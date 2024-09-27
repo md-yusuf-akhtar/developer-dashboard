@@ -23,7 +23,7 @@ export const Sidebar = () => {
           </li>
           <li onClick={() => handleActiveTab('Issues')}>
             <Link to="/devToArticles" className={activeTab === 'devToArticles' ? 'active' : ''} onClick={toggleSidebar}>
-              <i className="fas fa-exclamation-circle"></i> Dev Articles
+              <i className="fas fa-newspaper"></i> Dev Articles
             </Link>
           </li>
           {/* <li onClick={() => handleActiveTab('Pull Requests')}>
