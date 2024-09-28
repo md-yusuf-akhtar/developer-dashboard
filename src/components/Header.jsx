@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { DevDashContext } from '../Store/DevDashProvider';
 
 export const Header = () => {
-  const { toggleSidebar } = useContext(DevDashContext);
+  const { toggleSidebar, handleActiveTab } = useContext(DevDashContext);
 
   return (
     <header className="header">
