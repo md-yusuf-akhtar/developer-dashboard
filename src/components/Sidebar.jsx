@@ -1,4 +1,3 @@
-
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { DevDashContext } from '../Store/DevDashProvider';
@@ -21,7 +20,7 @@ export const Sidebar = () => {
               <i className="fas fa-folder"></i> Repositories
             </Link>
           </li>
-          <li onClick={() => handleActiveTab('Issues')}>
+          <li onClick={() => handleActiveTab('devToArticles')}>
             <Link to="/devToArticles" className={activeTab === 'devToArticles' ? 'active' : ''} onClick={toggleSidebar}>
               <i className="fas fa-newspaper"></i> Dev Articles
             </Link>
