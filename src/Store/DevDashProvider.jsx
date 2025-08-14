@@ -8,7 +8,7 @@ export const DevDashProvider = ({ children }) => {
   const [reposData, setReposData] = useState([]); 
   const [activeTab, setActiveTab] = useState('home');
   const [articles, setArticles] = useState([]);
-  const username = 'imyusufakhtar';  
+  const username = 'md-yusuf-akhtar';  
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -78,3 +78,4 @@ export const DevDashProvider = ({ children }) => {
     </DevDashContext.Provider>
   );
 };
+
