@@ -19,14 +19,14 @@ export const Profile = () => {
             <h1 className="profile-name">{userData.name || userData.login}</h1>
             <p className="profile-bio">{userData.bio || "No bio available."}</p>
             <button className="edit-btn">
-              <a href="https://github.com/imyusufakhtar" target="_blank" rel="noopener noreferrer">Explore more</a>
+              <a href="https://github.com/md-yusuf-akhtar" target="_blank" rel="noopener noreferrer">Explore more</a>
             </button>
           </div>
         </div>
 
         <div className="profile-details">
           <h2>Contact Information</h2>
-          <p><strong>Email:</strong> {userData.email || "imyusufakhtar@gmail.com"}</p>
+          <p><strong>Email:</strong> {userData.email || "mdyusuf2790@gmail.com"}</p>
           <p><strong>Location:</strong> {userData.location || "Not provided"}</p>
           <p><strong>Website:</strong> <a href={userData.blog} target="_blank" rel="noopener noreferrer">{userData.blog || "Not provided"}</a></p>
         </div>
@@ -34,3 +34,4 @@ export const Profile = () => {
     </>
   );
 };
+
